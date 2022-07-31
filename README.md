@@ -1,2 +1,1 @@
-# thesarahahmed
- Repo for my www.thesarahahmed.com
+Recreating [www.thesarahahmed.com](https:www.thesarahahmed.com) using Next.js.
