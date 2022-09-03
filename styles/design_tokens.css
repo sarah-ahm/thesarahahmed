@@ -1,0 +1,18 @@
+:root {
+    --dark: #121a34;
+    --off-white: #f5f7fe;
+    --purple: #523160;
+  
+    --space-sm: 0.7rem;
+    --space-md: 1.3rem;
+    --space-lg: 2.3rem;
+  
+    --font-size-sm: 0.7rem;
+    --font-size-md: 1.3rem;
+    --font-size-lg: 2.3rem;
+
+    --body-font: "Nunito Sans", sans-serif;
+
+    --side-padding: 3rem;
+    --max-width: 40%;
+  }

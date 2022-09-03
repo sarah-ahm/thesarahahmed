@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--dark);
+  background-color: var(--off-white);
+  font-family: var(--body-font);
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  font-size: var(--font-size-md);
+}
+
+h1 {
+  color: var(--dark);
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-size: var(--font-size-md);
+}
+
+p, article, section {
+  line-height: 1.5;
+}
+
+a, a:visited, input, button {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection {
+  color: var(--off-white);
+  background-color: var(--purple);
+}
+
+:focus {
+  outline: 0.15rem solid var(--purple);
+  outline-offset: 0.25rem;
+}
+main:focus {
+  outline: none;
+}
+
+img {
+  max-width: var(--max-width);
+}
+
+section:not(.hero) {
+  margin: 3rem var(--sidePadding) 0;
+}
+section:last-of-type {
+  margin-bottom: 3rem;
+}
+section h2 {
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+
+@media (max-width: 36rem) {
+  :root {
+    --side-padding: 1.5rem;
+    --max-width: 100%;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 81rem) {
+  html {
+    font-size: 18px;
+  }
+  section:not(.hero) {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
