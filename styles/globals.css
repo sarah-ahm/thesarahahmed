@@ -5,10 +5,10 @@
 }
 
 body {
-  color: var(--dark);
-  background-color: var(--off-white);
-  font-family: var(--body-font);
-  line-height: 1.5;
+  color: var(--color-text-default);
+  background-color: var(--color-bg-default);
+  font-family: var(--font-body), var(--font-default);
+  line-height: var(--line-height-body);
   -webkit-tap-highlight-color: transparent;
   font-size: var(--font-size-md);
 }
@@ -23,7 +23,7 @@ p {
 }
 
 p, article, section {
-  line-height: 1.5;
+  line-height: var(--line-height-body);
 }
 
 a, a:visited, input, button {
@@ -33,12 +33,12 @@ a, a:visited, input, button {
 }
 
 ::selection {
-  color: var(--off-white);
-  background-color: var(--purple);
+  color: var(--color-text-default);
+  background-color: var(--color-hl-default);
 }
 
 :focus {
-  outline: 0.15rem solid var(--purple);
+  outline: 0.15rem solid var(--color-text-default);
   outline-offset: 0.25rem;
 }
 main:focus {
@@ -50,7 +50,7 @@ img {
 }
 
 section:not(.hero) {
-  margin: 3rem var(--sidePadding) 0;
+  margin: 3rem var(--padding-default) 0;
 }
 section:last-of-type {
   margin-bottom: 3rem;

@@ -8,5 +8,236 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--min-item-width, 30ch), 1fr));
-  gap: var(--space-md);
+  gap: var(--gutter-default);
 }
+
+//LAYOUT
+.vertical-align-middle      { vertical-align: middle !important; }
+.vertical-align-top         { vertical-align: top !important; }
+.vertical-align-bottom      { vertical-align: bottom !important; }
+.vertical-align-text-top    { vertical-align: text-top !important; }
+.vertical-align-text-bottom { vertical-align: text-bottom !important; }
+.vertical-align-baseline    { vertical-align: baseline !important; }
+
+//PADDING
+.padding-none {
+  padding: 0;
+}
+//xs
+.padding-xs {
+  padding: $space-4;
+}
+.padding-top-xs {
+  padding-top: $space-4;
+}
+.padding-bottom-xs {
+  padding-bottom: $space-4;
+}
+.padding-left-xs {
+  padding-left: $space-4;
+}
+.padding-right-xs {
+  padding-right: $space-4;
+}
+//sm
+.padding-sm {
+  padding: $space-8;
+}
+.padding-top-sm {
+  padding-top: $space-8;
+}
+.padding-bottom-sm {
+  padding-bottom: $space-8;
+}
+.padding-left-sm {
+  padding-left: $space-8;
+}
+.padding-right-sm {
+  padding-right: $space-8;
+}
+//default
+.padding-default {
+  padding: $space-16;
+}
+.padding-top-default {
+  padding-top: $space-16;
+}
+.padding-bottom-default {
+  padding-bottom: $space-16;
+}
+.padding-left-default {
+  padding-left: $space-16;
+}
+.padding-right-default {
+  padding-right: $space-16;
+}
+//lg
+.padding-lg {
+  padding: $space-24;
+}
+.padding-top-lg {
+  padding-top: $space-24;
+}
+.padding-bottom-lg {
+  padding-bottom: $space-24;
+}
+.padding-left-lg {
+  padding-left: $space-24;
+}
+.padding-right-lg {
+  padding-right: $space-24;
+}
+//xl
+.padding-xl {
+  padding: $space-32;
+}
+.padding-top-xl {
+  padding-top: $space-32;
+}
+.padding-bottom-xl {
+  padding-bottom: $space-32;
+}
+.padding-left-xl {
+  padding-left: $space-32;
+}
+.padding-right-xl {
+  padding-right: $space-32;
+}
+//xxl
+.padding-xxl {
+  padding: $space-40;
+}
+.padding-top-xxl {
+  padding-top: $space-40;
+}
+.padding-bottom-xxl {
+  padding-bottom: $space-40;
+}
+.padding-left-xxl {
+  padding-left: $space-40;
+}
+.padding-right-xxl {
+  padding-right: $space-40;
+}
+//responsive containers
+.padding-container {
+  padding-right: $space-16 !important;
+  padding-left: $space-16 !important;
+
+  @include sm-breakpoint {
+    padding-right: $space-40 !important;
+    padding-left: $space-40 !important;
+  }
+
+  @include lg-breakpoint {
+    padding-right: $space-16 !important;
+    padding-left: $space-16 !important;
+  }
+}
+
+//MARGINS
+.margin-none {
+  margin: 0;
+}
+//xs
+.margin-xs {
+  margin: $space-4;
+}
+.margin-top-xs {
+  margin-top: $space-4;
+}
+.margin-bottom-xs {
+  margin-bottom: $space-4;
+}
+.margin-left-xs {
+  margin-left: $space-4;
+}
+.margin-right-xs {
+  margin-right: $space-4;
+}
+//sm
+.margin-sm {
+  margin: $space-8;
+}
+.margin-top-sm {
+  margin-top: $space-8;
+}
+.margin-bottom-sm {
+  margin-bottom: $space-8;
+}
+.margin-left-sm {
+  margin-left: $space-8;
+}
+.margin-right-sm {
+  margin-right: $space-8;
+}
+//default
+.margin-default {
+  margin: $space-16;
+}
+.margin-top-default {
+  margin-top: $space-16;
+}
+.margin-bottom-default {
+  margin-bottom: $space-16;
+}
+.margin-left-default {
+  margin-left: $space-16;
+}
+.margin-right-default {
+  margin-right: $space-16;
+}
+//lg
+.margin-lg {
+  margin: $space-24;
+}
+.margin-top-lg {
+  margin-top: $space-24;
+}
+.margin-bottom-lg {
+  margin-bottom: $space-24;
+}
+.margin-left-lg {
+  margin-left: $space-24;
+}
+.margin-right-lg {
+  margin-right: $space-24;
+}
+//xl
+.margin-xl {
+  margin: $space-32;
+}
+.margin-top-xl {
+  margin-top: $space-32;
+}
+.margin-bottom-xl {
+  margin-bottom: $space-32;
+}
+.margin-left-xl {
+  margin-left: $space-32;
+}
+.margin-right-xl {
+  margin-right: $space-32;
+}
+//xxl
+.margin-xxl {
+  margin: $space-40;
+}
+.margin-top-xxl {
+  margin-top: $space-40;
+}
+.margin-bottom-xxl {
+  margin-bottom: $space-40;
+}
+.margin-left-xxl {
+  margin-left: $space-40;
+}
+.margin-right-xxl {
+  margin-right: $space-40;
+}
+//auto
+.margin-auto { margin: auto !important; }
+.margin-top-auto { margin-top: auto !important; }
+.margin-right-auto { margin-right: auto !important; }
+.margin-bottom-auto { margin-bottom: auto !important; }
+.margin-left-auto { margin-left: auto !important; }

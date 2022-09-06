@@ -1,18 +1,110 @@
 :root {
-    --dark: #121a34;
-    --off-white: #f5f7fe;
-    --purple: #523160;
-  
-    --space-sm: 0.7rem;
-    --space-md: 1.3rem;
-    --space-lg: 2.3rem;
-  
-    --font-size-sm: 0.7rem;
-    --font-size-md: 1.3rem;
-    --font-size-lg: 2.3rem;
-
-    --body-font: "Nunito Sans", sans-serif;
-
-    --side-padding: 3rem;
+    /* COLOR */
+    /* background */
+    --color-bg-default: #F5F7FE;
+    --color-bg-brand: #BD61A6;
+    --color-bg-lemon: #FEF3C7;
+    --color-bg-blue: #DAF3FC;
+    --color-bg-turq: #BBF1EA;
+    --color-bg-lav: #EFD9FC;
+    /* text */
+    --color-text-default: #121A34;
+    --color-text-inverse: #F5F7FE;
+    --color-text-subtle: #8F94A3;
+    --color-text-brand: #BD61A6;
+    /* highlight */
+    --color-hl-default: #FEF3C7;
+    --color-hl-lemon: #FEF3C7;
+    --color-hl-blue: #DAF3FC;
+    --color-hl-turq: #BBF1EA;
+    --color-hl-lav: #EFD9FC;
+    /* border */
+    --color-border-default: #121A34;
+    --color-border-subtle: #8F94A3;
+    --color-border-brand: #BD61A6; 
+    /* button - primary */
+    --color-btn-bg-primary-default: #D59AC6;
+    --color-btn-bg-primary-nobg: #F5F7FE;
+    --color-btn-bg-primary-hover: #F5E2F1;
+    --color-btn-ol-primary-hover: #D59AC6;
+    --color-btn-bg-primary-focus: #D59AC6;
+    --color-btn-ol-primary-focus: #121A34;
+    --color-btn-bg-primary-disable: #F9F1F7;
+    --color-btn-text-primary-defualt: #121A34;
+    --color-btn-text-primary-disable: #F5E2F1;
+    /* button - secondary */
+    --color-btn-bg-secondary-default: #FFD166;
+    --color-btn-bg-secondary-hover: #FFEDC2;
+    --color-btn-ol-secondary-hover: #F5AB00;
+    --color-btn-bg-secondary-focus: #FFD166;
+    --color-btn-ol-secondary-focus: #121A34;
+    --color-btn-bg-secondary-disable: #FFEDC2;
+    --color-btn-text-secondary-defualt: #121A34;
+    --color-btn-text-secondary-disable: #61677A;
+    
+    /* LAYOUT */
+    /* space */
+    --space-4: 0.25rem;
+    --space-8: 0.5rem;
+    --space-12: 0.75rem;
+    --space-16: 1rem;
+    --space-24: 1.5rem;
+    --space-32: 2rem;
+    --space-40: 2.5rem;
+    --space-48: 3rem;
+    --space-80: 5rem;
+    --space-128: 8rem;
+    --space-192: 12rem;
+    --space-240: 15rem;
+    --space-288: 18rem;
+    --space-384: 24rem;
+    /* grid gutter */
+    --gutter-default: var(--space-12);
+    --gutter-md: var(--space-24);
+    --gutter-lg: var(--space-40);
+    /* width */
     --max-width: 40%;
+    --width-container-xs: 0;
+    --width-container-sm: 544px;
+    --width-contaner-md: 768px;
+    --width-container-lg: 1012px;
+    --width-container-xl: 1280px;
+
+    /* FONT */
+    /* typeface */
+    --font-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --font-body: "Nunito Sans";
+    --font-heading: "Nunito Sans";
+    /* weight */
+    --font-weight-default: 400;
+    --font-weight-semibold: 500;
+    --font-weight-bold: 600;
+    /* size */
+    --font-body-size-xs: 0.75rem; /* mobile default */
+    --font-body-size-sm: 0.875rem; 
+    --font-body-size-md: 1rem; /* desktop default */
+    --font-body-size-lg: 1.125rem;
+    --font-body-size-xl: 2rem;
+    --font-heading-size-xs: 1.25rem; /* mobile h4 */
+    --font-heading-size-sm: 1.5rem; 
+    --font-heading-size-md: 1.875rem;
+    --font-heading-size-lg: 2.25rem; /* mobile h1 */
+    --font-heading-size-xl: 3rem; 
+
+    /* LINE HEIGHT */
+    --line-height-heading: 1.25rem;
+    --line-height-body: 1.5rem;
+
+    /* BORDER */
+    --border-width-default: 1px;
+    --border-style-default: solid;
+    --border-default: 1px solid var(--color-border-default);
+    --border-radius-4: 0.25;
+    --border-radius-8: 0.5rem;
+    --border-radius-button: 0.875rem;
+    --border-radius-20: 1.125rem;
+    --border-radius-circle: 50%;
+
+    /* SHADOW */
+    --shadow-default: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
   }

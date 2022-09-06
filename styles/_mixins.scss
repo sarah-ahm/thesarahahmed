@@ -1,5 +1,39 @@
-@mixin desktop() {
-    @media (max-width: 600px) {
+@mixin xs-breakpoint() {
+  @media (min-width: --width-container-xs) {
+    @content;
+  }
+}
+
+@mixin sm-breakpoint() {
+  @media (min-width: --width-container-sm) {
+    @content;
+  }
+}
+
+@mixin md-breakpoint() {
+  @media (min-width: --width-container-md) {
+    @content;
+  }
+}
+
+@mixin lg-breakpoint() {
+    @media (min-width: --width-container-lg) {
       @content;
     }
   }
+
+@mixin xl-breakpoint() {
+    @media (min-width: --width-container-xl) {
+      @content;
+    }
+  }
+
+@mixin gutters () {
+  margin-right: -var(--gutter-default);
+  margin-left: -$gutter-default;
+
+  > [class*='col-'] {
+    padding-right: $gutter-default !important;
+    padding-left: $gutter-default !important;
+  }
+}
