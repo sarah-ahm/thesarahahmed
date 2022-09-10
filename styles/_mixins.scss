@@ -28,12 +28,12 @@
     }
   }
 
-@mixin gutters () {
-  margin-right: -var(--gutter-default);
-  margin-left: -$gutter-default;
+@mixin gutters ($gutter-width: var(--space-12)) {
+  margin-right: -$gutter-width;
+  margin-left: -$gutter-width;
 
   > [class*='col-'] {
-    padding-right: $gutter-default !important;
-    padding-left: $gutter-default !important;
+    padding-right: $gutter-width !important;
+    padding-left: $gutter-width !important;
   }
 }
